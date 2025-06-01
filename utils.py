@@ -23,6 +23,7 @@ def divide(a: int, b: int) -> float:
     """Zwraca iloraz dwóch liczb całkowitych a i b jako liczbę zmiennoprzecinkową."""
     return a / b
 
+
 def to_binary(n):
     """Konwertuje liczbę naturalną (0-100) na binarną reprezentację jako string.
     Podnosi ValueError dla liczb spoza zakresu 0-100.
@@ -30,6 +31,6 @@ def to_binary(n):
     """
     if not isinstance(n, int):
         raise TypeError("Liczba musi być całkowita")
-    if not (0 <= n <= 100):
+    if not 0 <= n <= 100:
         raise ValueError("Liczba musi być w zakresie 0-100")
     return bin(n)[2:]  # usuwa '0b' z początku
