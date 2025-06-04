@@ -23,6 +23,7 @@ def divide(a: int, b: int) -> float:
     """Zwraca iloraz dwóch liczb całkowitych a i b jako liczbę zmiennoprzecinkową."""
     return a / b
 
+
 def to_binary(n: int) -> str:
     """
     Converts a natural number in range 0–100 to its binary representation.
